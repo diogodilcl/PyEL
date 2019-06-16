@@ -9,11 +9,10 @@ setuptools.setup(
     author='Diogo Dil',
     author_email='diogodicl@gmail.com',
     license='Apache License 2.0',
-    description='This project aims to facilitate the use of decorators',
+    description='This project aims to facilitate the execution of codes before and after a method using decorator',
     long_description=long_description,
-    long_description_content_type='text/markdown',
+    packages=setuptools.find_packages("src"),
     url='https://github.com/diogodilcl/PyEL',
-    packages=setuptools.find_packages(),
     classifiers=[
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
