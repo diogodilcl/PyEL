@@ -7,7 +7,7 @@ the Decorator @PreEL and @PosEL accept as input codes to run, you can use simple
 Installing
 ----------
 
-Install and update using `pip`_:
+Install and update using ``pip`` :
 
 .. code-block:: text
 
@@ -28,7 +28,7 @@ A Simple Example
 
 
 Example with variables
-----------------
+----------------------
 
 .. code-block:: python
 
@@ -40,7 +40,7 @@ Example with variables
 
 
 Example with your code
-----------------
+----------------------
 
 .. code-block:: python
 

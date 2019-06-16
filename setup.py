@@ -1,9 +1,11 @@
-import io
+import os
 
 import setuptools
 
-with io.open("README.rst", "rt", encoding="utf8") as f:
-    readme = f.read()
+base_dir = os.path.dirname(__file__)
+
+with open(os.path.join(base_dir, "README.rst")) as f:
+    long_description = f.read()
 
 setuptools.setup(
     name='PyEL',
@@ -11,8 +13,8 @@ setuptools.setup(
     author='Diogo Dil',
     author_email='diogodicl@gmail.com',
     license='Apache License 2.0',
-    description='This project aims to facilitate the execution of codes before and after a method using decorator',
-    long_description=readme,
+    description='This project aims to facilitate the execution of codes before and after a method using decorator.',
+    long_description=long_description,
     packages=setuptools.find_packages('src'),
     package_dir={'': 'src'},
     include_package_data=True,
