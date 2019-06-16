@@ -11,7 +11,10 @@ setuptools.setup(
     license='Apache License 2.0',
     description='This project aims to facilitate the execution of codes before and after a method using decorator',
     long_description=long_description,
-    packages=setuptools.find_packages("src"),
+    packages=setuptools.find_packages('src'),
+    package_dir={'': 'src'},
+    include_package_data=True,
+    python_requires='>=3.1.*,!=3.2.*,!=3.3.*',
     url='https://github.com/diogodilcl/PyEL',
     classifiers=[
         'Programming Language :: Python',
